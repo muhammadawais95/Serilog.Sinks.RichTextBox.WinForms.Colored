@@ -17,6 +17,7 @@
 #endregion
 
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -44,7 +45,7 @@ namespace Serilog.Sinks.RichTextBoxForms.Extensions
         {
             if (richTextBox.InvokeRequired)
             {
-                richTextBox.Invoke(() => AppendRtf(richTextBox, rtf, autoScroll));
+                richTextBox.Invoke(new Action(() => AppendRtf(richTextBox, rtf, autoScroll)));
                 return;
             }
 
@@ -82,6 +83,6 @@ namespace Serilog.Sinks.RichTextBoxForms.Extensions
             }
 
             richTextBox.Resume();
-        }
+        }        
     }
 }

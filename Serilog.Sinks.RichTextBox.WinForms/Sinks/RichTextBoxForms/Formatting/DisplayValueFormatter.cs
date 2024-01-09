@@ -21,6 +21,7 @@ using System.IO;
 using System.Windows.Forms;
 using Serilog.Events;
 using Serilog.Sinks.RichTextBoxForms.Themes;
+using Serilog.Sinks.RichTextBoxForms.Extensions;
 
 namespace Serilog.Sinks.RichTextBoxForms.Formatting
 {

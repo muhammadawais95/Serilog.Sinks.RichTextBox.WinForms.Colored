@@ -1,37 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Authors>Simon Vonhoff</Authors>
-		<Company>github.com/vonhoff</Company>
-		<Copyright>Copyright © 2022 Simon Vonhoff - Provided under the Apache License, Version 2.0.</Copyright>
+		<Authors>Muhammad Awais</Authors>
+		<Company>https://github.com/muhammadawais95</Company>
+		<Copyright>Copyright © 2024 Muhammad Awais - Provided under the Apache License, Version 2.0.</Copyright>
 		<DebugType>portable</DebugType>
 		<Description>A Serilog sink that writes log events to a WinForms RichTextBox control with colors and theme support.</Description>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
-		<MinClientVersion>3.3</MinClientVersion>
-		<Nullable>enable</Nullable>
+		<MinClientVersion>3.3</MinClientVersion>		
 		<OutputType>Library</OutputType>
+		<Nullable>enable</Nullable>
 		<PackageIcon>serilog-sink-nuget.png</PackageIcon>
-		<PackageId>Serilog.Sinks.RichTextBox.WinForms.Colored</PackageId>
+		<PackageId>Serilog.Sinks.RichTextBox.WinForms.NetFx</PackageId>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/vonhoff/serilog-sinks-richtextbox-winforms</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/muhammadawais95/Serilog.Sinks.RichTextBox.WinForms.Colored</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageTags>serilog;sinks;richtextbox;winforms;windows;sink;colors;theme;themes;serilog-sink;vonhoff;rich;textbox;</PackageTags>
-		<RepositoryUrl>https://github.com/vonhoff/serilog-sinks-richtextbox-winforms.git</RepositoryUrl>
+		<PackageTags>serilog;sinks;richtextbox;winforms;windows;sink;colors;theme;themes;serilog-sink;awais;mawais;awais95;muhammadawais95;rich;textbox;</PackageTags>
+		<RepositoryUrl>https://github.com/muhammadawais95/Serilog.Sinks.RichTextBox.WinForms.Colored</RepositoryUrl>
 		<RootNamespace>Serilog</RootNamespace>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<TargetFramework>net6.0-windows7.0</TargetFramework>
+		<TargetFramework>net452</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
-		<Version>1.2.0</Version>
+		<Version>1.0.0</Version>
 		<PackageReleaseNotes>
-			Added new logger configuration.
-			Added auto-scroll property.
-			Exposed the RichTextBox sink class.
-			Updated documentation.
+			Target Framework changed to .NET 4.5.2
+			Serilog package changed to 2.10.0
 		</PackageReleaseNotes>
 		<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
 		<NeutralLanguage>en-US</NeutralLanguage>
+		<LangVersion>9.0</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -46,7 +45,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Serilog" Version="3.0.1" />
+	  <PackageReference Include="Serilog" Version="2.10.0" />
+	  <PackageReference Include="System.ValueTuple" Version="4.5.0" />
 	</ItemGroup>
 
 </Project>

@@ -102,42 +102,42 @@ namespace SampleForm
 
         private void BtnParallelFor_Click(object sender, EventArgs e)
         {
-            Parallel.For(1, 101, stepNumber =>
-            {
-                var stepName = FormattableString.Invariant($"Step {stepNumber:000}");
+            //Parallel.For(1, 101, stepNumber =>
+            //{
+            //    var stepName = FormattableString.Invariant($"Step {stepNumber:000}");
 
-                Log.Verbose("Hello from Parallel.For({StepName}) Verbose", stepName);
-                Log.Debug("Hello from Parallel.For({StepName}) Debug", stepName);
-                Log.Information("Hello from Parallel.For({StepName}) Information", stepName);
-                Log.Warning("Hello from Parallel.For({StepName}) Warning", stepName);
-                Log.Error("Hello from Parallel.For({StepName}) Error", stepName);
-                Log.Fatal("Hello from Parallel.For({StepName}) Fatal", stepName);
-            });
+            //    Log.Verbose("Hello from Parallel.For({StepName}) Verbose", stepName);
+            //    Log.Debug("Hello from Parallel.For({StepName}) Debug", stepName);
+            //    Log.Information("Hello from Parallel.For({StepName}) Information", stepName);
+            //    Log.Warning("Hello from Parallel.For({StepName}) Warning", stepName);
+            //    Log.Error("Hello from Parallel.For({StepName}) Error", stepName);
+            //    Log.Fatal("Hello from Parallel.For({StepName}) Fatal", stepName);
+            //});
         }
 
         private async void BtnTaskRun_Click(object sender, EventArgs e)
         {
-            var tasks = new List<Task>();
+            //var tasks = new List<Task>();
 
-            for (var i = 1; i <= 100; i++)
-            {
-                var stepNumber = i;
-                var task = Task.Run(() =>
-                {
-                    var stepName = FormattableString.Invariant($"Step {stepNumber:000}");
+            //for (var i = 1; i <= 100; i++)
+            //{
+            //    var stepNumber = i;
+            //    var task = Task.Run(() =>
+            //    {
+            //        var stepName = FormattableString.Invariant($"Step {stepNumber:000}");
 
-                    Log.Verbose("Hello from Task.Run({StepName}) Verbose", stepName);
-                    Log.Debug("Hello from Task.Run({StepName}) Debug", stepName);
-                    Log.Information("Hello from Task.Run({StepName}) Information", stepName);
-                    Log.Warning("Hello from Task.Run({StepName}) Warning", stepName);
-                    Log.Error("Hello from Task.Run({StepName}) Error", stepName);
-                    Log.Fatal("Hello from Task.Run({StepName}) Fatal", stepName);
-                });
+            //        Log.Verbose("Hello from Task.Run({StepName}) Verbose", stepName);
+            //        Log.Debug("Hello from Task.Run({StepName}) Debug", stepName);
+            //        Log.Information("Hello from Task.Run({StepName}) Information", stepName);
+            //        Log.Warning("Hello from Task.Run({StepName}) Warning", stepName);
+            //        Log.Error("Hello from Task.Run({StepName}) Error", stepName);
+            //        Log.Fatal("Hello from Task.Run({StepName}) Fatal", stepName);
+            //    });
 
-                tasks.Add(task);
-            }
+            //    tasks.Add(task);
+            //}
 
-            await Task.WhenAll(tasks);
+            //await Task.WhenAll(tasks);
         }
 
         private void BtnVerbose_Click(object sender, EventArgs e)

@@ -2,14 +2,12 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net6.0-windows</TargetFramework>
+		<TargetFramework>net452</TargetFramework>
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
+		<LangVersion>9.0</LangVersion>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Serilog" Version="3.0.1" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Serilog.Sinks.RichTextBox.WinForms\Serilog.Sinks.RichTextBox.WinForms.Colored.csproj" />

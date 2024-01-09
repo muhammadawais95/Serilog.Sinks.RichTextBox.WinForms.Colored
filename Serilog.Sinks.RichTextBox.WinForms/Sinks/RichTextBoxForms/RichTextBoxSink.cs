@@ -89,7 +89,7 @@ namespace Serilog.Sinks.RichTextBoxForms
             }
             catch (ObjectDisposedException)
             {
-                _messageQueue.Clear();
+                //_messageQueue.Clear();
             }
             catch (OperationCanceledException)
             {
