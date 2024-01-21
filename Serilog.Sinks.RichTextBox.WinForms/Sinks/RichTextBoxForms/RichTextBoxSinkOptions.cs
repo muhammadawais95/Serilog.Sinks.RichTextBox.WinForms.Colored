@@ -32,8 +32,8 @@ namespace Serilog.Sinks.RichTextBoxForms
         /// <param name="messageBatchSize">Max messages per batch for printing.</param>
         /// <param name="messagePendingInterval">Duration to hold incoming messages.</param>
         /// <param name="autoScroll">Auto-scroll to bottom for new messages.</param>
-        public RichTextBoxSinkOptions(Theme appliedTheme, int messageBatchSize, int messagePendingInterval,
-            bool autoScroll)
+        public RichTextBoxSinkOptions(Theme appliedTheme, int messageBatchSize = 200, int messagePendingInterval = 5,
+            bool autoScroll = true)
         {
             MessageBatchSize = messageBatchSize;
             MessagePendingInterval = messagePendingInterval;

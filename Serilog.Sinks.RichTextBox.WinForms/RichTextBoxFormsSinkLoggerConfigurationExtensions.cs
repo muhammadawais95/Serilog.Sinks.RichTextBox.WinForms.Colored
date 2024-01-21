@@ -29,7 +29,7 @@ namespace Serilog
 {
     public static class RichTextBoxFormsSinkLoggerConfigurationExtensions
     {
-        private const string OutputTemplate = "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}";
+        private const string OutputTemplate = "[{Timestamp:HH:mm:ss}] [{Level:u3}] {Message:lj}{NewLine}{Exception}";
 
         /// <summary>
         /// Writes log events to a RichTextBox control.
